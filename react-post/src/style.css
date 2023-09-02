@@ -1,0 +1,121 @@
+/* Add global styles as needed */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    row-gap: 1em;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e5e6ee;
+    padding: 0em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+/* Style for the post container */
+.post {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide overflowing content */
+
+    margin: 20px;
+    padding: 16px;
+    background-color: #fff;
+    max-width: 600px;
+    position: relative;
+    justify-content: center;
+    
+  }
+  /* Style for the post header */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 5px;
+  }
+  
+  /* Style for post content */
+  .post-content {
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+  
+  /* Style for post action buttons */
+  .post-actions {
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    bottom: 10px;
+  }
+
+  .post-time{
+    font-size: 15px;
+    color: #999999;
+    
+  }
+  
+  .cnImg {
+    overflow: hidden; /* Hide any overflowing content */
+    width: 100%; /* Make sure the image takes the full width of the parent div */
+    height: 100%; /* Make sure the image takes the full height of the parent div */
+ border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Scale the image to cover the entire div while maintaining its aspect ratio */
+}
+
+
+
+
+
+
+
+  .like-button, .comment-button, .share-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+  }
+  
+  .like-button.liked {
+    color: #007bff; /* Change color when liked */
+  }
+  @media only screen and (max-width:720px){
+    body{
+      font-size: 0.8em;
+    }
+  }
+  
+  @media only screen and (max-width:540px){
+    body{
+      font-size: 0.7em;
+    }
+  }
+  
+  @media only screen and (max-width:480px){
+    body{
+      font-size: 0.5em;
+    }
+  }
+  
+  @media only screen and (max-width:350px){
+    body{
+      font-size: 0.47em;
+    }
+  }

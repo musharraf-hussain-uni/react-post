@@ -1,0 +1,28 @@
+
+/* Common styles for both light and dark themes */
+
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  .theme-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  /* Light Theme */
+.app.light {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text */
+  }
+  /* Dark Theme */
+.app.dark {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+  }
